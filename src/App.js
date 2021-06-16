@@ -1,13 +1,17 @@
 import './App.css';
 import React, { useState } from 'react';
-import { Editor } from "./Editor";
+
 
 
 function App() {
 
-const [ state, setState] = useState({
-  text: ""
-});
+const [ text, setText] = useState("");
+
+// const handleChange = (initialValues) => {
+//   setText(initialValues.concat(text))
+// }
+
+
 
   return (
     <div className="App">
@@ -16,8 +20,7 @@ const [ state, setState] = useState({
       </header>
       <div className="contentOfMyApp">
 
-        <Editor values={} onChange={} />
-        <form id="markDownForm">
+      <form id="markDownForm">
 
       <label>
         Editor:
@@ -27,15 +30,15 @@ const [ state, setState] = useState({
         cols="45"
         name="text"
         placeholder="Insert Text Here"
-        type="text"
-        value={state.text}
-        onChange={handleChange} />
+        // value={text}
+        // onChange={handleChange}
+         />
       </label>
 
-      
       </form>
+        
       <div id="preview">
-        {state.text}
+       
       Preview
       </div>
       </div>

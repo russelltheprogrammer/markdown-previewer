@@ -16,16 +16,20 @@ body {
   max-width: 750px;
   left: 50%;
   margin: 0 auto;
+  white-space: pre-line;
 
 }
 
 #editor{
   background-color: yellow;
+  border-style: groove;
+  border-width: thick;
+  border-color: white;
 }
 
 .space-box {
   max-width: 100%;
-  padding: 15px;
+  padding: 10px;
   left: 50%;
   margin: 0 auto;
 }

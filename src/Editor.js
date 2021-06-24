@@ -32,6 +32,9 @@ const handleChange = (e) => {
       <div className="space-box">
           {null}
       </div>
+      <label style={{fontWeight: "bold" }}>
+        Previewer:
+        </label>
         <div id="preview">
             {text}
         </div>

@@ -1,16 +1,11 @@
-import './App.css';
+import './index.css';
 import React, { useState } from 'react';
+import Editor from './Editor';
+
 
 
 
 function App() {
-
-const [ text, setText] = useState("");
-
-// const handleChange = (initialValues) => {
-//   setText(initialValues.concat(text))
-// }
-
 
 
   return (
@@ -18,30 +13,9 @@ const [ text, setText] = useState("");
       <header id="header">
         Markdown Previewer
       </header>
-      <div className="contentOfMyApp">
-
-      <form id="markDownForm">
-
-      <label>
-        Editor:
-        <textarea 
-        id="editor" 
-        rows="10" 
-        cols="45"
-        name="text"
-        placeholder="Insert Text Here"
-        // value={text}
-        // onChange={handleChange}
-         />
-      </label>
-
-      </form>
+      
+      <Editor />
         
-      <div id="preview">
-       
-      Preview
-      </div>
-      </div>
     </div>
   );
 }

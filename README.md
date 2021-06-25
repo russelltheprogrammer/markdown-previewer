@@ -1,4 +1,4 @@
-# Link to Markdown Previewer --> [Random Quote Machine](http://russelltheprogrammer.github.io/markdown-previewer)
+# Link to Markdown Previewer --> [Markdown Previewer](http://russelltheprogrammer.github.io/markdown-previewer)
 
 # Getting Started with Create React App
 

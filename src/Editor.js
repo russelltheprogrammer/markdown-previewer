@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import "./index.css"
+import Previewer from './Previewer';
+import defaultText from './defaultText';
 
 const Editor = () => {
 
-const [ text, setText] = useState("");
+const [ text, setText] = useState(defaultText);
 
 const handleChange = (e) => {
   setText(e.target.value);
@@ -21,7 +23,7 @@ const handleChange = (e) => {
         <textarea 
         id="editor" 
         rows="10" 
-        cols="45"
+        cols="50"
         name="text"
         placeholder="Insert Text Here"
         value={text}
@@ -32,14 +34,9 @@ const handleChange = (e) => {
       <div className="space-box">
           {null}
       </div>
-      <label style={{fontWeight: "bold" }}>
-        Previewer:
-        </label>
-        <div id="preview">
-            {text}
-        </div>
-
+      <Previewer text={text} />
       </div>
+      
       );
 }
  

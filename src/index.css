@@ -38,9 +38,17 @@ body {
   border-width: thick;
   border-color: white;
   max-width: 600px;
-  padding: 150px;
+  padding: 50px 100px 50px 100px;
+
   left: 50%;
   margin: 0 auto;
   background-color: lightgreen;
   word-wrap: break-word;
+}
+.footer {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  padding-top: 5rem;
 }

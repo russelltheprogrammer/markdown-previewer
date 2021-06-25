@@ -8,7 +8,6 @@ const Previewer = ({ text }) => {
       });
       const renderer = new marked.Renderer();
 
-
     return ( 
         <div>
         <label style={{fontWeight: "bold" }}>
@@ -16,10 +15,7 @@ const Previewer = ({ text }) => {
         </label>
         <div id="preview" 
         dangerouslySetInnerHTML={{ __html: marked(text, { renderer: renderer }) }} />
-        
-        
         </div>
-
      );
 }
  

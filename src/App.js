@@ -2,8 +2,6 @@ import './index.css';
 import React, { } from 'react';
 import Editor from './Editor';
 
-
-
 function App() {
 
   return (
@@ -11,7 +9,6 @@ function App() {
       <header id="header">
         Markdown Previewer
       </header>
-      
       <Editor />
       <footer className="footer">
         Coded By <a 

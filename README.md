@@ -27,7 +27,6 @@ I used ```create-react-app```.
 
 ## Key Concepts Used
 
-+ Fetch APIs
 + React hooks
 + React components
 + Form fills
